@@ -1,0 +1,62 @@
+#N canvas 70 23 783 599 10;
+#X text 9 7 maq.inst.korg-sq1;
+#X obj 158 32 maq.util.bpm.step;
+#X floatatom 158 7 5 0 0 0 - - -;
+#X text 193 6 bpm;
+#X text 8 21 korg sq-1 sequencer;
+#X text 290 11 steps per beat;
+#X floatatom 256 12 5 0 0 0 - - -;
+#X floatatom 158 52 5 0 0 0 - - -;
+#X text 192 51 ms per step;
+#X obj 157 74 / 24;
+#X text 187 73 24 times per quarter note;
+#X floatatom 157 99 5 0 0 0 - - -;
+#X text 192 98 ms per timing clock;
+#X obj 11 98 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 11 119 sel 1 0, f 12;
+#X obj 10 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 45 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 10 158 250;
+#X msg 45 158 252;
+#X floatatom 11 182 5 0 0 0 - - -;
+#X obj 66 234 midiout;
+#X floatatom 105 212 5 0 0 0 - - -;
+#X obj 106 118 metro 100;
+#X obj 10 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 106 181 5 0 0 0 - - -;
+#X obj 64 205 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 106 158 248;
+#X text 139 179 clock;
+#X obj 106 137 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 41 180 start/stop;
+#X text 139 208 port number;
+#X text 138 220 choose korg sq-1 control;
+#X text 32 94 on/off;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 9 0;
+#X connect 9 0 11 0;
+#X connect 11 0 22 1;
+#X connect 13 0 14 0;
+#X connect 13 0 22 0;
+#X connect 14 0 15 0;
+#X connect 14 1 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 18 0;
+#X connect 17 0 19 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 19 0 23 0;
+#X connect 21 0 20 1;
+#X connect 22 0 28 0;
+#X connect 24 0 25 0;
+#X connect 24 0 20 0;
+#X connect 26 0 24 0;
+#X connect 28 0 26 0;

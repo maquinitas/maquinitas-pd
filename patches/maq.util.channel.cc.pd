@@ -1,0 +1,22 @@
+#N canvas 33 50 500 525 10;
+#X text 12 5 maq.util.channel.cc;
+#X obj 12 29 inlet;
+#X floatatom 12 107 5 1 16 0 - - -;
+#X obj 65 28 loadbang;
+#X obj 65 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 66 73 1;
+#X obj 12 195 outlet;
+#X floatatom 12 170 5 0 0 0 - - -;
+#X obj 12 146 + 175;
+#X text 55 105 MIDI channel number;
+#X text 55 120 1-16;
+#X text 94 74 channel 1 by default;
+#X text 50 170 CC for channel;
+#X connect 1 0 2 0;
+#X connect 2 0 8 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;

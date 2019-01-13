@@ -1,0 +1,27 @@
+#N canvas 762 49 500 825 10;
+#X declare -path ../parameters;
+#X text 4 11 maq.util.paramatersj;
+#X text 2 25 loads parameters from text files;
+#X text 3 57 text files live in parameters/ folder;
+#X text 3 41 parameters include CC and notes;
+#X obj 102 286 textfile;
+#X obj 320 166 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 262 227 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 302 263 rewind;
+#X floatatom 101 349 5 0 0 0 - - -;
+#X obj 102 316 unpack f s;
+#X obj 352 333 moses;
+#X obj 207 467 folder;
+#X obj 7 84 declare -path ../parameters;
+#X msg 52 209 read cc-bastl-microgranny2.txt;
+#X obj 202 316 print;
+#X text 178 85 add parameters/ to search path;
+#X connect 4 0 9 0;
+#X connect 4 0 14 0;
+#X connect 5 0 13 0;
+#X connect 6 0 4 0;
+#X connect 7 0 4 0;
+#X connect 9 0 8 0;
+#X connect 13 0 4 0;
