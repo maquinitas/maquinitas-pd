@@ -13,7 +13,13 @@ There are two types of patches:
 
 ## List of available Pd patches
 
-* maq.util.devices:
+* maq.inst.korg-sq1, for control of KORG SQ-1 sequencer.
+* maq.util.bpm.beat, for converting from bpm to ms per beat.
+* maq.util.bpm.step, for converting from bpm to ms per step.
+* maq.util.channel.cc, for CC messages
+* maq.util.channel.noteon, for note on messages
+* maq.util.parameters, for loading parameters.
+* maq.util.positive, for outputting only positive numbers.
 
 ## Reference  
 
@@ -22,12 +28,3 @@ There are two types of patches:
 ## License  
 
 MIT
-
-* maq.inst.korg-sq1: for control of KORG SQ-1 sequencer.
-* maq.util.bpm.beat
-* maq.util.bpm.step
-* maq.util.channel.cc
-* maq.util.channel.noteon
-* maq.util.devices
-* maq.util.lfo~
-* maq.util.parameters
